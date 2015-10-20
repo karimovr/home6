@@ -1,0 +1,2 @@
+module MyAttrAccessor
+def attr_accessor_with_history
