@@ -20,7 +20,6 @@ begin
  end
 end
 
-
 begin
    station2 = nil
   with_retry do
