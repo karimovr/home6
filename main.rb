@@ -102,7 +102,7 @@ begin
   retry
 end
 
- puts "Поезд #{train} номер #{train.number} готов: #{train}"
+ puts "#{train.train_type} поезд номер #{train.number} готов: #{train}"
  train.add_route(route)
  puts "Поезд #{train} номер #{train.number} принял маршрут следования #{station1.name} - #{station2.name} "
  puts "Поезд находится на станции #{train.current_stop} и готов к отправке"
@@ -135,7 +135,7 @@ loop do
         puts "Поезд на станции: #{train.current_stop}"
         puts "Предыдущая станция: #{train.show_previous}"
         rescue StandardError
-        puts "Поезд на ходится первой станции:"
+        puts "Поезд находится на ыпервой станции:"
         puts "#{station1.name}"
       end
 

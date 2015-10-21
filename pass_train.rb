@@ -1,11 +1,14 @@
 class PassengerTrain < Train
   attr_reader :wagons
-
+  
   def initialize (number)
     @number = number  
     @wagons = [] 
     @speed = 0
     @train_route = nil
+  end
+    def train_type 
+        puts "Пассажирский"
  end
 
   def hook_one(passengerwagon) 

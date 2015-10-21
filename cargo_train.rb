@@ -1,6 +1,6 @@
 class CargoTrain < Train
   attr_reader :wagons
-
+  type = "Грузовой"
   def initialize (number)
     @number = number 
     @type = type 
@@ -8,7 +8,9 @@ class CargoTrain < Train
     @speed = 0
     @train_route = nil
   end
-
+def train_type 
+        puts "Грузовой"
+ end
   def hook_one(cargowagon)
     return nil if @speed > 0
     @wagons << cargowagon

@@ -19,6 +19,7 @@ class Train
     @@trains[number] = self 
     @speed = 0
     @train_route = nil
+    
   end
 
   
